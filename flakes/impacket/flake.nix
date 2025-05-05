@@ -97,10 +97,10 @@
 
 			# Define the impacket-help command
 			impacket-help() {
-			echo "Available Impacket scripts:"
-			for script in ${builtins.concatStringsSep " " impacketScripts}; do
-			echo "- $script"
-			done
+				echo "Available Impacket scripts:"
+				for script in ${builtins.concatStringsSep " " impacketScripts}; do
+					echo "- $script"
+				done
 			}
 
 			# Export the function to make it available in the shell
